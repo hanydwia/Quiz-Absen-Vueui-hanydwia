@@ -2,7 +2,7 @@
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Contact App</a>
+      <a class="navbar-brand" href="#">Absensi Mahasiswa</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -17,10 +17,22 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link class="nav-link" to="/">Home</router-link> 
+            <router-link class="nav-link" to="/">Mahasiswa</router-link> 
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/groups">Groups</router-link> 
+            <router-link class="nav-link" to="/index">Absen</router-link> 
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/matakuliah">Matakuliah</router-link> 
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/Jadwal">Jadwal</router-link> 
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/Semester">Semester</router-link> 
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/Kontrak">Kontrak Matakuliah</router-link> 
           </li>
         </ul>
       </div>

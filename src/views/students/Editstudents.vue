@@ -95,12 +95,12 @@ export default {
     const route = useRoute()
 
 onMounted(()=>{
-  axios.get(`http://127.0.0.1:8000/api/students/api/students/${route.params.id}`)
+  axios.get(`http://127.0.0.1:8000/api/students/${route.params.id}`)
   .then(response => {
 console.log(response.data.data.id)
 
     student.id = response.data.data.id
-    student.nama_mahasiswa = response.data.data._mahasiswa
+    student.nama_mahasiswa = response.data.data.nama_mahasiswa
     student.alamat = response.data.data.alamat
     student.no_tlp = response.data.data.no_tlp
     student.email = response.data.data.email
@@ -112,14 +112,14 @@ console.log(response.data.data.id)
 
     function update() {
       let id = student.id;
-      let nama_mahasiwa = student._mahasiwa;
+      let nama_mahasiswa = student.nama_mahasiswa;
       let alamat = student.alamat;
       let no_tlp = student.no_tlp;
       let email = student.email;
       
-      axios.put(`http://127.0.0.1:8000/api/students/api/students/${route.params.id}`, {
+      axios.put(`http://127.0.0.1:8000/api/students/${route.params.id}`, {
           id: id,
-          nama_mahasiswa: _mahasiswa,
+          nama_mahasiswa: nama_mahasiswa,
           alamat: alamat,
           no_tlp: no_tlp,
           email: email,
